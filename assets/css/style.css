@@ -51,11 +51,6 @@ span {
   font-family: "SpaceGrotesk-Regular";
 }
 
-.wrapper {
-  display: flex;
-  align-items: stretch;
-}
-
 #sidebar {
   padding-bottom: 20px;
   background: var(--preto-medio);
@@ -120,9 +115,6 @@ span {
   border: solid 1px;
   border-radius: 12px;
 }
-#sidebar ul.components a.active svg {
-  stroke: var(--laranja);
-}
 #sidebar ul.components a:hover {
   text-decoration: none;
   color: var(--laranja);
@@ -137,12 +129,6 @@ span {
 #sidebar ul.components svg {
   margin-right: 0.5rem;
 }
-@media screen and (min-width: 1025px) {
-  #sidebar ul.components svg {
-    margin-right: 0.5rem;
-  }
-}
-
 @media screen and (min-width: 1366px) {
   #sidebar.active {
     min-width: 80px;
@@ -182,20 +168,25 @@ span {
   }
 }
 
-#content {
-  width: 100%;
-  padding: 20px;
-  min-height: 100vh;
-  transition: all 0.3s;
-  background-color: var(--bg-color);
-}
-
 #sidebarCollapse {
   background: transparent;
   color: transparent;
   border: none;
   border-radius: 0;
   padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+#content {
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  background-color: var(--bg-color);
 }
 
 #content .col-lg-6,

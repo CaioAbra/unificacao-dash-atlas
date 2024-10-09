@@ -100,12 +100,6 @@
         svg {
             margin-right: .5rem;
 
-            &:not(.active) {
-                stroke: var(--laranja) !important;
-            }
-
-
-
             @media screen and (min-width:1025px) {
                 // margin-right: .5rem;
             }
