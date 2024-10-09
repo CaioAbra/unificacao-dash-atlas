@@ -1,0 +1,1 @@
+sass --watch D:\Developer\wamp64\www\unificacao-dash-atlas\scss\style.scss:D:\Developer\wamp64\www\atlasCarteira\assets\css\style.css
