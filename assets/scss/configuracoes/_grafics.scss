@@ -1,0 +1,135 @@
+.chart-container {
+    // width: 300px;
+    margin: auto;
+}
+
+.chart-legend {
+    @media screen and (min-width:425px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+.chart-legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.legend-label {
+    color: var(--cinza-claro);
+    font-size: 14px;
+}
+
+.apexcharts-tooltip-title {
+    border-bottom: none !important;
+    color: var(--preto-medio) !important;
+    text-align: center;
+    background: var(--cinza-claro) !important;
+    // font-size: 8px !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    font-weight: 300;
+    font-family: 'SpaceGrotesk-Regular' !important;
+}
+
+.apexcharts-tooltip-series-group.apexcharts-tooltip-series-group-0.apexcharts-active,
+.apexcharts-tooltip-series-group.apexcharts-tooltip-series-group-1.apexcharts-active {
+    background: var(--cinza-claro) !important;
+    color: var(--preto-medio) !important;
+    font-weight: 300;
+    font-family: 'SpaceGrotesk-Regular' !important;
+}
+
+
+
+
+
+
+.filter-container {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+
+    .input-icon {
+        input {
+            background: var(--bg-color);
+            color: var(--cinza);
+            border-radius: 6px;
+            border: none;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            font-family: SpaceGrotesk-Regular;
+        }
+    }
+
+    .btn-filter {
+        background-color: var(--bg-color);
+        color: var(--cinza-medio);
+        border: 1px solid var(--bg-color);
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'SpaceGrotesk-Regular';
+        text-transform: uppercase;
+
+        // Estilo ativo
+        &.active {
+            color: var(--laranja);
+            border-color: var(--laranja);
+        }
+
+        // Estilo ao passar o mouse
+        &:hover {
+            color: var(--laranja);
+            border-color: var(--laranja);
+        }
+    }
+
+    // Quando o container estiver em hover, o active perde o estilo temporariamente
+    &:hover .btn-filter.active:not(:hover) {
+        color: var(--cinza-claro);
+        border-color: var(--bg-color);
+    }
+
+    &.listadepositantes {
+        @media screen and (max-width:767px) {
+            display: block;
+
+            .input-icon {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            display: flex;
+        }
+    }
+
+}
+
+.legend-label {
+    font-family: 'SpaceGrotesk-Regular';
+}
+
+g{
+    text{
+        color: var(--cinza-claro) !important;
+        fill: var(--cinza-claro) !important;
+    }
+}

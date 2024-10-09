@@ -1,0 +1,128 @@
+.navbar {
+    // background-color: transparent;
+    padding: 10px 20px;
+
+
+    @media screen and (max-width:1366px) {
+        width: 100%;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        margin: 0;
+        left: 0;
+        background-color: var(--preto-medio);
+        padding:1rem 0;
+
+        .container-fluid {
+            justify-content: flex-start;
+        }
+
+        button.togle {
+            border: none;
+            background-color: transparent;
+        }
+
+        .adjust_navbar {
+            width: 100%;
+        }
+
+        ul {
+            display: -webkit-inline-box;
+            float: right;
+            
+        }
+
+        .nav-link {
+            background-color: var(--bg-color);
+        }
+
+
+
+
+    }
+
+    @media screen and (min-width:1367px) {
+        background-color: transparent;
+    }
+
+    .navbar-header {
+        .navbar-brand {
+            color: var(--cinza-claro);
+            font-weight: 400;
+            font-size: 26px;
+        }
+
+        .navbar-subtitle {
+            color: var(--cinza-medio);
+            font-size: 18px;
+            font-weight: 300;
+            display: block;
+        }
+
+        @media screen and (min-width:1366px) {
+            line-height: 18px;
+        }
+    }
+
+    .search-box {
+        background-color: var(--preto-medio);
+        border: none;
+        border-radius: 12px;
+        height: 40px;
+        width: 38rem;
+        color: var(--cinza-claro);
+    }
+
+    .navbar-nav {
+        .nav-item {
+            margin-left: 15px;
+
+
+            .nav-link {
+                color: #F4F4F4;
+                font-size: 1.2rem;
+
+                &:not(.profile-link) {
+                    border-radius: 50%;
+
+                    height: 3rem;
+                    width: 3rem;
+                    align-content: center;
+                    text-align: center;
+
+                    @media screen and (min-width:1366px) {
+                        background-color: var(--preto-medio);
+                    }
+                }
+
+                &:hover {
+                    color: #f0ad4e;
+                }
+
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .profile-link {
+                display: flex;
+                align-items: center;
+                color: #fff;
+
+                img {
+                    margin-right: 10px;
+                }
+
+                span {
+                    color: #fff;
+                    font-size: 0.9rem;
+                }
+
+                i {
+                    font-size: 0.9rem;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

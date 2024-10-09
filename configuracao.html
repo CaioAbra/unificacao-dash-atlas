@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Caio Matheus dos Santos Abra">
-    <title>DashBoard</title>
+    <title>Configurações</title>
     <link rel="icon" href="./src/img/logo/logo.ico" type="image/x-icon">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 
@@ -46,9 +46,9 @@
                 </li>
 
                 <li>
-                    <a href="javascript:void(0)" class="active">
+                    <a href="javascript:void(0)">
 
-                        <svg class="active" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg"
                             stroke="#F4F4F4">
                             <path d="M11.5 1V5.21053" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round" />
@@ -236,7 +236,7 @@
                 </li>
 
                 <li>
-                    <a href="configuracao.html" >
+                    <a href="configuracao.html" class="active">
                         <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_31_108)">
@@ -407,245 +407,163 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-xl-8">
-                        <div class="row">
-                            <div class="col-6 mb-2 pr-xl-1">
-                                <div class="card custom-card">
-                                    <div class="card-body">
-                                        <h6 class="card-title"><img src="./src/img/icons/dolar 1.svg">Saldo
-                                            Disponível
-                                        </h6>
-                                        <h2 class="card-value orange">R$ 89.521,09</h2>
-                                        <p class="card-subtext">
-                                            <img src="./src/img/icons/Fill-4.svg">
-                                            <span class="green">15%</span> vs mês anterior <span
-                                                class="color-darkGray">+R$ 1.401,14 hoje</span>
-                                        </p>
-                                        <div class="dropdown-divider"></div>
-
-                                        <a href="#" class="card-link">Retirar fundos ></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-6 mb-2 px-xl-1">
-                                <div class="card custom-card">
-                                    <div class="card-body">
-                                        <h6 class="card-title">
-                                            <img src="./src/img/icons/lucrosTotais.png">
-                                            Lucros Totais
-                                        </h6>
-                                        <h2 class="card-value">R$ 317.014,95</h2>
-                                        <p class="card-subtext"><img src="./src/img/icons/Fill-4.svg"><span
-                                                class="green">2%</span> vs mês anterior <span class="color-darkGray">+R$
-                                                1.401,14 hoje</span></p>
-                                        <div class="dropdown-divider"></div>
-
-                                        <a href="#" class="card-link">Ver relatório ></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-6 mb-2 pr-xl-1">
-                                <div class="card custom-card">
-                                    <div class="card-body">
-                                        <h6 class="card-title"><img src="./src/img/icons/deposito.svg">Depósitos
-                                            Totais
-                                        </h6>
-                                        <h2 class="card-value">R$ 570.626,91</h2>
-                                        <p class="card-subtext">
-                                            <img src="./src/img/icons/Fill-4.svg">
-                                            <span class="green">8%</span> vs mês anterior <span class="color-darkGray">
-                                                1.937 FTD’s</span>
-                                        </p>
-                                        <div class="dropdown-divider"></div>
-
-                                        <a href="#" class="card-link">Ver relatório ></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mb-2 px-xl-1">
-                                <div class="card custom-card">
-                                    <div class="card-body">
-                                        <h6 class="card-title"><img src="./src/img/icons/registro.svg">Registros
-                                        </h6>
-                                        <h2 class="card-value">17.974</h2>
-                                        <p class="card-subtext"><img
-                                                src="./src/img/icons/seta-para-cima-direita 1.svg"><span
-                                                class="red">4%</span> vs mês anterior <span class="color-darkGray">+97
-                                                hoje</span></p>
-                                        <div class="dropdown-divider"></div>
-
-                                        <a href="#" class="card-link">Ver relatório ></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-12 col-xl-4 mb-2 block-grafico pl-xl-1">
-                        <div class="card custom-card grafico">
-                            <div class="card-body">
-                                <!-- <h6 class="card-title"><img src="./src/img/icons/receita.svg">Receita</h6> -->
-                                <!-- <h6 class="card-title"><img width="18" src="./src/img/icons/Icon.png">Receita</h6> -->
-                                <h6 class="card-title"><img width="18"
-                                        src="./src/img/icons/grafico-para-cima.svg">Receita</h6>
-                                <h2 class="card-value">R$ 76.092,926</h2>
-                                <p class="card-subtext"><img src="./src/img/icons/Fill-4.svg"><span
-                                        class="green">15%</span> vs mês anterior</p>
-                                <canvas id="chart"></canvas>
-                                <div class="dropdown-divider"></div>
-
-                                <a href="#" class="card-link">Ver relatório ></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-12 col-xl-8 top-afiliados pr-xl-1  mb-2">
-                        <div class="card card custom-card shadow overflow-x-mobile">
-                            <div class="card-body">
-                                <h6 class="card-title"><img src="./src/img/icons/top.svg">Top Afiliados</h6>
-
-                                <table class="table tableDesk">
-                                    <thead>
-                                        <tr>
-                                            <th>Posição</th>
-                                            <th>Id do afiliado</th>
-                                            <th>Depósitos</th>
-                                            <th>Soma de depósitos</th>
-                                            <th>Lucro</th>
-                                            <th>Saque</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <td>1º</td>
-                                            <td>#*****0301</td>
-                                            <td>150</td>
-                                            <td>R$ 22.450,00</td>
-                                            <td>R$ 7.700,00</td>
-                                            <td>R$ 6.900,80</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2º</td>
-                                            <td>#*****0301</td>
-                                            <td>150</td>
-                                            <td>R$ 22.450,00</td>
-                                            <td>R$ 7.700,00</td>
-                                            <td>R$ 6.900,80</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3º</td>
-                                            <td>#*****0301</td>
-                                            <td>150</td>
-                                            <td>R$ 22.450,00</td>
-                                            <td>R$ 7.700,00</td>
-                                            <td>R$ 6.900,80</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4º</td>
-                                            <td>#*****0301</td>
-                                            <td>150</td>
-                                            <td>R$ 22.450,00</td>
-                                            <td>R$ 7.700,00</td>
-                                            <td>R$ 6.900,80</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5º</td>
-                                            <td>#*****0301</td>
-                                            <td>150</td>
-                                            <td>R$ 22.450,00</td>
-                                            <td>R$ 7.700,00</td>
-                                            <td>R$ 6.900,80</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <table class="table tableMobile">
-                                    <thead>
-                                        <tr>
-                                            <th>Posição</th>
-                                            <th>Id do afiliado</th>
-                                            <th>Depósitos</th>
-                                            <th>Soma Dep.</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <td>1º</td>
-                                            <td>#*****0301</td>
-                                            <td>150</td>
-                                            <td>R$ 22.450,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2º</td>
-                                            <td>#*****0301</td>
-                                            <td>150</td>
-                                            <td>R$ 22.450,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3º</td>
-                                            <td>#*****0301</td>
-                                            <td>150</td>
-                                            <td>R$ 22.450,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4º</td>
-                                            <td>#*****0301</td>
-                                            <td>150</td>
-                                            <td>R$ 22.450,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5º</td>
-                                            <td>#*****0301</td>
-                                            <td>150</td>
-                                            <td>R$ 22.450,00</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <div class="dropdown-divider"></div>
-
-                                <a href="#" class="card-link">Ver relatório ></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-xl-4 links pl-xl-1">
+                    <div class="col-12 col-xl-4 mb-1 mb-xl-0 pr-xl-1">
                         <div class="card card custom-card shadow">
                             <div class="card-body">
-                                <h6 class="card-title"><img src="./src/img/icons/fastLink.svg">Links Rápidos</h6>
-                                <ul class="list-unstyled">
-                                    <li><a href="#" class="text-white"><img class="mr-2"
-                                                src="./src/img/icons/plus.svg">Saque</a></li>
-                                    <div class="dropdown-divider my-3"></div>
+                                <h6 class="card-title d-block d-md-flex">
+                                    <img src="./src/img/icons/cards/person.svg">Dados Pessoais
+                                </h6>
 
-                                    <li><a href="#" class="text-white"><img class="mr-2"
-                                                src="./src/img/icons/plus.svg">Programa de afiliados</a></li>
-                                    <div class="dropdown-divider my-3"></div>
 
-                                    <li><a href="#" class="text-white"><img class="mr-2"
-                                                src="./src/img/icons/plus.svg">Suporte</a></li>
-                                    <div class="dropdown-divider my-3"></div>
+                                <form class="mb-4">
+                                    <div class="form-group d-flex align-items-center profile p-2">
+                                        <div class="position-relative">
+                                            <img src="./src/img/profile.jpg" alt="Profile picture" class="profile-img">
+                                            <label for="file-input" class="camera-icon">
+                                                <img src="./src/img/icons/cards/camera.svg" alt="Camera Icon">
+                                            </label>
+                                            <input type="file" id="file-input" class="file-input">
+                                        </div>
+                                        <div class="profile-info ml-3">
+                                            <div class="email">jonsnow@gmail.com</div>
+                                            <div class="id text-muted">ID: 123456789</div>
+                                            <div class="verified mt-1">
+                                                <img src="./src/img/icons/cards/checked (1).svg" alt="Verified Icon"
+                                                    class="verified-icon mr-1">
+                                                <span>Verificado</span>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    <li><a href="#" class="text-white"><img class="mr-2"
-                                                src="./src/img/icons/plus.svg">Perguntas frequentes</a></li>
-                                </ul>
+                                    <div class="form-group">
+                                        <label for="Nomecompleto">Nome</label>
+                                        <input type="text" class="form-control" id="Nomecompleto">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="sobrenome">Sobrenome</label>
+                                        <input type="text" class="form-control" id="sobrenome">
+                                    </div>
+
+                                    <div class="form-group position-relative">
+                                        <label for="date">Data de nascimento</label>
+                                        <span class="verified-label">Verificado</span>
+                                        <div class="form-row">
+                                            <select id="date" class="form-control col-3 date disabled">
+                                                <option selected>01</option>
+                                                <option>...</option>
+                                            </select>
+                                            <select id="date" class="form-control col-4 date disabled">
+                                                <option selected>Janeiro</option>
+                                                <option>...</option>
+                                            </select>
+                                            <select id="date" class="form-control col-4 date disabled">
+                                                <option selected>1900</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Gen">Gênero</label>
+                                        <select id="Gen" class="form-control col-12">
+                                            <option selected>Masculino</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Whatsapp">Whatsapp</label>
+                                        <input type="tel" class="form-control" id="Whatsapp">
+                                    </div>
+
+                                    <div class="form-group position-relative">
+                                        <label for="CPF">CPF</label>
+                                        <span class="verified-label">Verificado</span>
+                                        <input type="text" class="form-control disabled" id="CPF" value="001002003">
+                                    </div>
+
+                                    <div class="form-group position-relative">
+                                        <label for="Email">Email</label>
+                                        <span class="verified-label">Verificado</span>
+                                        <input type="email" class="form-control disabled" id="Email"
+                                            value="jonsnow@gmail.com">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Endereco">Endereço</label>
+                                        <input type="text" class="form-control" id="Endereco">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Pais">País</label>
+                                        <select id="Pais" class="form-control col-12">
+                                            <option selected>Brasil</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="col-4">
+                                            <label for="Cidade">Cidade</label>
+                                            <select id="Cidade" class="form-control col-12">
+                                                <option selected>São Paulo</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-3">
+                                            <label for="Estado">Estado</label>
+                                            <select id="Estado" class="form-control col-12">
+                                                <option selected>SP</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="CEP">CEP</label>
+                                            <input type="text" class="form-control" id="CEP">
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="dropdown-divider pb-3"></div>
+                                <a href="#" class="card-link-btn">Salvar</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-xl-4 mb-1 mb-xl-0 pl-xl-1">
+                        <div class="card card custom-card shadow">
+                            <div class="card-body">
+                                <h6 class="card-title d-block d-md-flex">
+                                    <img src="./src/img/icons/cards/secure.svg">segurança
+                                </h6>
+
+                                <form class="mb-4">
+                                    <div class="form-group">
+                                        <label for="Nomecompleto">Senha antiga</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Nomecompleto">Nova senha</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Nomecompleto">Confirmar nova senha</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+
+
+                                </form>
+
+                                <div class="dropdown-divider pb-3"></div>
+
+                                <a href="#" class="card-link-btn">Alterar Senha</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 
@@ -654,6 +572,7 @@
     <script src="./assets/lib/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/lib/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="./assets/javascript/index.js"></script>
 
 </body>

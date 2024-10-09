@@ -1,0 +1,29 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'SpaceGrotesk-bold';
+}
+
+p,
+a,
+ul,
+li,
+span,
+text {
+    font-family: 'SpaceGrotesk-Regular' !important;
+}
+
+.navbar-brand,
+.navbar-subtitle {
+    font-family: 'SpaceGrotesk-Regular';
+}
+
+text {
+    @media screen and (max-width:500px) {
+
+        font-size: 12px;
+    }
+}
