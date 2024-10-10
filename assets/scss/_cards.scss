@@ -280,14 +280,24 @@ span.card-link {
 
             button {
                 padding: 0;
-                color: var(--cinza);
+                color: var(--cinza-medio);
                 font-size: 12px;
+
+                &:focus,
+                &:hover {
+                    box-shadow: none;
+                    text-decoration: none;
+                }
+
+                &:focus{
+                    color: var(--laranja);
+                }
             }
         }
 
         .card-body {
             padding: 0;
-            color: var(--cinza);
+            color: var(--cinza-claro);
             font-size: 12px;
         }
     }
@@ -317,4 +327,8 @@ span.card-link {
 .copyLink {
     margin-left: auto !important;
     width: inherit !important;
+}
+
+.card-subtitle.text-orange.mb-3 {
+    font-size: 1.4rem;
 }

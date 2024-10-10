@@ -18,3 +18,21 @@ body {
     overflow-x: hidden;
     // background-color: var(--bg-color);
 }
+
+.text-orange {
+    color: var(--laranja);
+}
+
+.height-100 {
+    height: 100%;
+}
+
+button,
+a.btn,
+.card-link-btn {
+    font-family: SpaceGrotesk-SemiBold;
+}
+
+.ft-12-px{
+    font-size: .75rem;
+}
