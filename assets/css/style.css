@@ -791,6 +791,19 @@ span.card-link {
   }
 }
 
+.card {
+  background-color: var(--preto-medio);
+}
+
+.image-container.aviao {
+  height: auto !important;
+}
+
+.copyLink {
+  margin-left: auto !important;
+  width: inherit !important;
+}
+
 .chart-container {
   margin: auto;
 }

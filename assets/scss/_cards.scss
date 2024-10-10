@@ -300,3 +300,21 @@ span.card-link {
         }
     }
 }
+
+.card {
+    background-color: var(--preto-medio);
+
+}
+
+.img-premios {
+    @media screen and (min-width:1366px) {}
+}
+
+.image-container.aviao {
+    height: auto !important;
+}
+
+.copyLink {
+    margin-left: auto !important;
+    width: inherit !important;
+}
