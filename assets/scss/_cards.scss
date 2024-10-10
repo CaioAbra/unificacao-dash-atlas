@@ -281,7 +281,8 @@ span.card-link {
             button {
                 padding: 0;
                 color: var(--cinza-medio);
-                font-size: 12px;
+                font-size: 14px;
+                font-family: SpaceGrotesk-Regular;
 
                 &:focus,
                 &:hover {
@@ -289,7 +290,7 @@ span.card-link {
                     text-decoration: none;
                 }
 
-                &:focus{
+                &:focus {
                     color: var(--laranja);
                 }
             }

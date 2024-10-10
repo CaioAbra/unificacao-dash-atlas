@@ -781,7 +781,8 @@ span.card-link {
 .accordion .card .card-header button {
   padding: 0;
   color: var(--cinza-medio);
-  font-size: 12px;
+  font-size: 14px;
+  font-family: SpaceGrotesk-Regular;
 }
 .accordion .card .card-header button:focus, .accordion .card .card-header button:hover {
   box-shadow: none;
