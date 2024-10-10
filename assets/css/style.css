@@ -779,6 +779,8 @@ span.card-link {
 }
 .accordion .card .card-body {
   padding: 0;
+  color: var(--cinza);
+  font-size: 12px;
 }
 
 @media screen and (min-width: 1366px) {
