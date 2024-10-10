@@ -69,6 +69,12 @@
                     padding-bottom: .2rem;
                 }
             }
+
+            td,
+            th {
+                border-bottom: 1px solid var(--bg-color);
+                padding-top: .8rem;
+            }
         }
     }
 }
@@ -173,7 +179,7 @@ ul.nav.nav-pills {
         font-size: 1rem;
     }
 
-    &-legal{
+    &-legal {
         font-size: 12px;
         color: var(--cinza-medio);
     }

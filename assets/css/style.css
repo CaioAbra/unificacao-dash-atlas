@@ -360,6 +360,11 @@ span {
     padding-bottom: 0.2rem;
   }
 }
+.overflow-table .table tr td,
+.overflow-table .table tr th {
+  border-bottom: 1px solid var(--bg-color);
+  padding-top: 0.8rem;
+}
 
 .name {
   color: var(--cinza-claro);
