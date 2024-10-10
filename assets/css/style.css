@@ -824,6 +824,20 @@ span.card-link {
   font-size: 14px;
 }
 
+.ofertaMes {
+  color: var(--laranja);
+  font-size: 12px;
+  padding-left: 10px;
+  margin-bottom: 12px;
+  font-weight: 300;
+  font-family: SpaceGrotesk-Regular;
+}
+@media screen and (min-width: 1024px) {
+  .ofertaMes {
+    margin-bottom: 0;
+  }
+}
+
 .chart-container {
   margin: auto;
 }
