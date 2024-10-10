@@ -30,9 +30,15 @@ body {
 button,
 a.btn,
 .card-link-btn {
-    font-family: SpaceGrotesk-SemiBold;
+    font-family: SpaceGrotesk-SemiBold !important;
+    font-weight: 500 !important;
 }
 
-.ft-12-px{
+.ft-12-px {
     font-size: .75rem;
+}
+
+.fs-14px {
+    font-size: 14px;
+    font-weight: 300;
 }

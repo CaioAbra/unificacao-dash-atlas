@@ -820,6 +820,10 @@ span.card-link {
   font-size: 1.4rem;
 }
 
+.btnMarketing {
+  font-size: 14px;
+}
+
 .chart-container {
   margin: auto;
 }
@@ -963,11 +967,17 @@ body {
 button,
 a.btn,
 .card-link-btn {
-  font-family: SpaceGrotesk-SemiBold;
+  font-family: SpaceGrotesk-SemiBold !important;
+  font-weight: 500 !important;
 }
 
 .ft-12-px {
   font-size: 0.75rem;
+}
+
+.fs-14px {
+  font-size: 14px;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
