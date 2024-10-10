@@ -54,6 +54,8 @@ $(document).ready(function () {
 
         if (windowWidth <= 768) { $('img.iconDesactive').attr('src', './src/img/logo/ATLAS icone 2.svg'); }
     }
+
+    Checktabs();
 });
 
 // graficos de estatistica
@@ -472,3 +474,84 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 });
+
+function Checktabs() {
+    //abas
+    // Pega o parâmetro da URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var tab = urlParams.get('tab'); // Pega o valor do parâmetro "tab"
+
+    // Se houver um parâmetro, ativa a aba correspondente
+    if (tab) {
+        // $('#' + tab).tab('show'); // Ativa a aba com o ID correspondente
+
+
+        if (tab == "Relatorios") {
+            if ($('a#abaDepositantes').hasClass('active')) {
+                $('a#abaDepositantes').removeClass('active');
+                $('#Depositantes').removeClass('show');
+                $('#Depositantes').removeClass('active');
+
+                $('a#abaRelatorio').addClass('active');
+                $('#Relatorios').addClass('show');
+                $('#Relatorios').addClass('active');
+            }
+            if ($('a#abaAfiliados').hasClass('active')) {
+                $('a#abaAfiliados').removeClass('active');
+                $('#Afiliados').removeClass('show');
+                $('#Afiliados').removeClass('active');
+
+                $('a#abaRelatorio').addClass('active');
+                $('#Relatorios').addClass('show');
+                $('#Relatorios').addClass('active');
+            }
+        }
+
+        if (tab == "Depositantes") {
+            if ($('a#abaRelatorio').hasClass('active')) {
+                $('a#abaRelatorio').removeClass('active');
+                $('#Relatorios').removeClass('show');
+                $('#Relatorios').removeClass('active');
+
+                $('a#abaDepositantes').addClass('active');
+                $('#Depositantes').addClass('show');
+                $('#Depositantes').addClass('active');
+            }
+            if ($('a#abaAfiliados').hasClass('active')) {
+                $('a#abaAfiliados').removeClass('active');
+                $('#Afiliados').removeClass('show');
+                $('#Afiliados').removeClass('active');
+
+                $('a#abaDepositantes').addClass('active');
+                $('#Depositantes').addClass('show');
+                $('#Depositantes').addClass('active');
+            }
+        }
+
+        if (tab == "Afiliados") {
+            if ($('a#abaRelatorio').hasClass('active')) {
+                $('a#abaRelatorio').removeClass('active');
+                $('#Relatorios').removeClass('show');
+                $('#Relatorios').removeClass('active');
+
+                $('a#abaAfiliados').addClass('active');
+                $('#Afiliados').addClass('show');
+                $('#Afiliados').addClass('active');
+            }
+            if ($('a#abaDepositantes').hasClass('active')) {
+                $('a#abaDepositantes').removeClass('active');
+                $('#Depositantes').removeClass('show');
+                $('#Depositantes').removeClass('active');
+
+                $('a#abaAfiliados').addClass('active');
+                $('#Afiliados').addClass('show');
+                $('#Afiliados').addClass('active');
+            }
+        }
+
+
+    }
+
+    // console.log(tab);
+}
+
