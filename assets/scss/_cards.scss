@@ -153,6 +153,7 @@
 @media screen and (min-width: 1366px) {
     .custom-card {
         // margin-bottom: 20px;
+        // height: 100%;
     }
 
     .cards-painel {
@@ -286,6 +287,14 @@ span.card-link {
 
         .card-body {
             padding: 0;
+        }
+    }
+}
+
+.body-estatisticas {
+    @media screen and (min-width: 1366px) {
+        .custom-card {
+            height: 100%;
         }
     }
 }

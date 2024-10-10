@@ -781,6 +781,12 @@ span.card-link {
   padding: 0;
 }
 
+@media screen and (min-width: 1366px) {
+  .body-estatisticas .custom-card {
+    height: 100%;
+  }
+}
+
 .chart-container {
   margin: auto;
 }
