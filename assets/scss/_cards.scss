@@ -338,7 +338,7 @@ span.card-link {
     font-size: 14px;
 }
 
-.ofertaMes{
+.ofertaMes {
     color: var(--laranja);
     font-size: 12px;
     padding-left: 10px;
@@ -350,4 +350,9 @@ span.card-link {
     @media screen and (min-width:1024px) {
         margin-bottom: 0;
     }
+}
+
+.progAfiliadosBtn {
+    max-width: 26rem;
+    margin: auto;
 }

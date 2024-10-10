@@ -838,6 +838,11 @@ span.card-link {
   }
 }
 
+.progAfiliadosBtn {
+  max-width: 26rem;
+  margin: auto;
+}
+
 .chart-container {
   margin: auto;
 }
