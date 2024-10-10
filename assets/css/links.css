@@ -172,7 +172,7 @@
   .row_two {
     display: flex;
     flex-direction: row;
-    gap: 9px;
+    gap: 7px;
   }
   .width-546px {
     width: 546px;
