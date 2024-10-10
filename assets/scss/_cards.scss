@@ -71,7 +71,9 @@
             color: var(--laranja);
         }
 
-        @media screen and (max-width:768px) {
+        font-size: 1rem;
+
+        @media screen and (min-width:768px) {
             font-size: 24px;
         }
 
@@ -355,4 +357,12 @@ span.card-link {
 .progAfiliadosBtn {
     max-width: 26rem;
     margin: auto;
+}
+
+#dashIndex{
+    .custom-card{
+        @media screen and (max-width:400px) {
+            height: 100%;
+        }
+    }
 }
