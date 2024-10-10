@@ -331,8 +331,10 @@ span {
     overflow-x: scroll;
   }
 }
-.overflow-table .table {
-  min-width: 61rem;
+@media screen and (max-width: 1024px) {
+  .overflow-table .table {
+    min-width: 61rem;
+  }
 }
 .overflow-table .table tr th {
   color: var(--laranja);
