@@ -365,7 +365,7 @@ span {
   }
 }
 
-h6.name {
+.name {
   color: var(--cinza-claro);
   font-size: 16px;
   font-weight: 400;
