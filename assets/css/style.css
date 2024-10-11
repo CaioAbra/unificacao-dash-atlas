@@ -803,6 +803,7 @@ span.card-link {
   padding: 0;
   color: var(--cinza-claro);
   font-size: 12px;
+  font-family: SpaceGrotesk-Regular !important;
 }
 
 @media screen and (min-width: 1366px) {
