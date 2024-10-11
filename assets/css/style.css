@@ -886,6 +886,7 @@ span.card-link {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    flex-wrap: wrap;
   }
 }
 
@@ -1031,6 +1032,12 @@ a.btn,
 .fs-14px {
   font-size: 14px;
   font-weight: 300;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+  .h-md-100 {
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

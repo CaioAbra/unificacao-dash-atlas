@@ -254,8 +254,77 @@ var options = {
     }
 };
 
+// Função para redimensionar o gráfico com base na largura da janela
+function resizeChart() {
+    var chartContainer = document.querySelector("#chart");
+
+    if (window.innerWidth <= 768) { // Tablets e dispositivos móveis
+        chart.updateOptions({
+            chart: {
+                height: '250px' // Altura para telas de tablet/móveis
+            }
+        });
+    } else { // Para telas maiores (desktop)
+        chart.updateOptions({
+            chart: {
+                height: '300px' // Altura para desktop
+            }
+        });
+    }
+}
+
+// Configurações do gráfico
+var options = {
+    chart: {
+        type: 'donut',
+        width: '100%',
+        height: '300px' // Altura inicial do gráfico
+    },
+    series: [45, 30, 25],
+    colors: ['#F19B1A', '#A6A6A6', '#353535'],
+    labels: ['Depósitos', 'Depositantes', 'FTD\'s'],
+    legend: {
+        show: false
+    },
+    dataLabels: {
+        enabled: false
+    },
+    plotOptions: {
+        pie: {
+            expandOnClick: false,
+            donut: {
+                size: '70%',
+                labels: {
+                    show: true,
+                    total: {
+                        show: true,
+                        label: 'Total',
+                        formatter: function (w) {
+                            return 'R$ 24.500,20'; // Valor total personalizado
+                        },
+                        style: {
+                            color: '#F4F4F4',
+                            fontSize: '16px'
+                        }
+                    }
+                }
+            }
+        }
+    },
+    stroke: {
+        show: false
+    }
+};
+
+// Inicializa o gráfico
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
+
+// Chama a função de redimensionamento ao carregar a página
+resizeChart();
+
+// Adiciona um listener para redimensionar o gráfico quando a janela for redimensionada
+window.addEventListener('resize', resizeChart);
 
 //grafico 1
 var options1 = {
@@ -370,12 +439,33 @@ var chart2 = new ApexCharts(document.querySelector("#lineChart2"), options2);
 chart2.render();
 
 // grafico3
+// Função para redimensionar o gráfico com base na largura da janela
+function resizeChart1() {
+    var chartContainer1 = document.querySelector("#chart1");
+
+    if (window.innerWidth <= 768) { // Tablets e dispositivos móveis
+        chart1.updateOptions({
+            chart: {
+                height: '250px' // Altura para telas de tablet/móveis
+            }
+        });
+    } else { // Para telas maiores (desktop)
+        chart1.updateOptions({
+            chart: {
+                height: '300px' // Altura para desktop
+            }
+        });
+    }
+}
+
+// Configurações do gráfico
 var options1 = {
     chart: {
         type: 'donut',
-        width: '100%'
+        width: '100%',
+        height: '300px' // Altura inicial do gráfico
     },
-    series: [175, 80], // Percentuais de Depósitos, Depositantes, e FTD's
+    series: [175, 80], // Percentuais de Afiliados totais e Novos
     colors: ['#DE8734', '#B9B9B9'], // Cores das fatias
     labels: ['Afiliados totais', 'Novos'],
     legend: {
@@ -411,8 +501,16 @@ var options1 = {
     }
 };
 
+// Inicializa o gráfico
 var chart1 = new ApexCharts(document.querySelector("#chart1"), options1);
 chart1.render();
+
+// Chama a função de redimensionamento ao carregar a página
+resizeChart1();
+
+// Adiciona um listener para redimensionar o gráfico quando a janela for redimensionada
+window.addEventListener('resize', resizeChart1);
+
 
 
 $(document).ready(function () {
@@ -554,4 +652,3 @@ function Checktabs() {
 
     // console.log(tab);
 }
-
