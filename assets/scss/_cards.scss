@@ -359,10 +359,18 @@ span.card-link {
     margin: auto;
 }
 
-#dashIndex{
-    .custom-card{
+#dashIndex {
+    .custom-card {
         @media screen and (max-width:400px) {
             height: 100%;
         }
+    }
+}
+
+#caroselDash {
+
+    img,
+    .carousel-item {
+        border-radius: .5rem;
     }
 }

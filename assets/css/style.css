@@ -850,6 +850,11 @@ span.card-link {
   }
 }
 
+#caroselDash img,
+#caroselDash .carousel-item {
+  border-radius: 0.5rem;
+}
+
 .chart-container {
   margin: auto;
 }
