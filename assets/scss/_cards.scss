@@ -66,12 +66,11 @@
 
         font-weight: bold;
         margin-bottom: 5px;
+        font-size: 1rem;
 
         &.orange {
             color: var(--laranja);
         }
-
-        font-size: 1rem;
 
         @media screen and (min-width:768px) {
             font-size: 24px;
@@ -381,6 +380,15 @@ span.card-link {
 
         &:hover {
             color: var(--laranja);
+        }
+    }
+}
+
+.links {
+    a{
+        @media screen and (max-width:900px) {
+            
+            font-size: 14px;
         }
     }
 }
