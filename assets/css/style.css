@@ -790,7 +790,7 @@ span.card-link {
   padding: 0;
   color: var(--cinza-medio);
   font-size: 14px;
-  font-family: SpaceGrotesk-Regular;
+  font-family: SpaceGrotesk-Regular !important;
 }
 .accordion .card .card-header button:focus, .accordion .card .card-header button:hover {
   box-shadow: none;
@@ -1045,6 +1045,12 @@ a.btn,
     max-width: 20rem;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+  .text-md-14 {
+    font-size: 14px !important;
   }
 }
 

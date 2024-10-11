@@ -283,7 +283,7 @@ span.card-link {
                 padding: 0;
                 color: var(--cinza-medio);
                 font-size: 14px;
-                font-family: SpaceGrotesk-Regular;
+                font-family: SpaceGrotesk-Regular !important;
 
                 &:focus,
                 &:hover {
@@ -385,7 +385,7 @@ span.card-link {
 }
 
 .links {
-    a{
+    a {
         @media screen and (max-width:900px) {
             
             font-size: 14px;
