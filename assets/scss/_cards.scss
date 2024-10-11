@@ -373,4 +373,14 @@ span.card-link {
     .carousel-item {
         border-radius: .5rem;
     }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        color: var(--cinza-claro);
+        font-size: 2rem;
+
+        &:hover {
+            color: var(--laranja);
+        }
+    }
 }

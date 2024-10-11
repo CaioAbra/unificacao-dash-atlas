@@ -52,7 +52,7 @@ $(document).ready(function () {
             });
         }
 
-        if (windowWidth <= 768) { $('img.iconDesactive').attr('src', './src/img/logo/ATLAS icone 2.svg'); }
+        if (windowWidth < 1024) { $('img.iconDesactive').attr('src', './src/img/logo/ATLAS icone 2.svg'); }
     }
 
     Checktabs();

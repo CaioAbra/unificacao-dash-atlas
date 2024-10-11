@@ -854,6 +854,15 @@ span.card-link {
 #caroselDash .carousel-item {
   border-radius: 0.5rem;
 }
+#caroselDash .carousel-control-next,
+#caroselDash .carousel-control-prev {
+  color: var(--cinza-claro);
+  font-size: 2rem;
+}
+#caroselDash .carousel-control-next:hover,
+#caroselDash .carousel-control-prev:hover {
+  color: var(--laranja);
+}
 
 .chart-container {
   margin: auto;
